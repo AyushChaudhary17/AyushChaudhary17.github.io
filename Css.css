@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;1,600;1,700&display=swap');
+
+/* --------------------------- CSS RESET ----------------------- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Poppins;
+    /* background-color: rgb(180, 178, 178); */
+}
+
+/* ---------------------------- Utility Classes -------------------------- */
+.logo{
+    padding: 1em;
+    font-size: 1.5rem;
+    
+}
+
+.heading1{
+    font-size: 3rem;
+}
+.heading2{
+    font-size: 2rem;
+}
+.heading3{
+    font-size: 1.5rem;
+}
+.textwhite{
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90vw;
+    margin: 0 auto;
+}
+.navbaritemHeading{
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+.btn3{
+    padding: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
+    border-radius: 50px;
+    margin-top: 1em;
+}
+.btn3:hover{
+    background-color: red;
+    box-shadow: 0 0.2px 10px 5px rgb(39, 27, 27);
+}
+
+
+
+
+/* ----------------------------- Header Styling ----------------------- */
+.header{
+    /* border: 2px solid red; */
+    padding-top: 1em;
+    height: 70vh;
+    position: relative;
+    border-bottom-left-radius:50px ;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
+}
+
+/* ------------------------------- Navbar Styling ----------------------- */
+.navbar::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+.navbar .logo{
+    /* border: 2px solid black; */
+    width: 10%;
+    float: left;
+}
+
+.navbar .navlist .navlistBlock{
+    /* border: 2px solid red; */
+    width: 70%;
+    float: right;
+}
+.navbar .navlist .navlistBlock{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+.navlistItems a::after{
+    border: 1px solid wheat;
+    display: block;
+    content: "";
+    /* background-color: ; */
+    opacity: 0;
+    width: 0%;
+    transition: 0.5s ease-in-out;
+    /* padding: 0.1em; */
+}
+.navlistItems a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+
+/* ------------------------------ Info Styling ------------------------- */
+.info{
+    /* border: 2px solid green; */
+    width: 40%;
+    margin-top: 2em;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-20%,-35%);
+    padding: 1em;
+    /* line-height-step: 2px; */
+}
+
+.info .infoContent .infoBtn{
+    /* border: 2px solid green; */
+    padding: 0.5em;
+    border-radius: 50px;
+    background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.info .infoContent .infoBtn:hover{
+    box-shadow: 0 0.2px 10px 5px rgb(39, 27, 27);
+    background-color: red;
+    color: white;
+    
+}
+.info .infoContent .infoitems{
+    margin-top: 1rem;
+}
+.info .infoContent p{
+    padding: 0.5em;
+    width: 80%;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 1px;
+}
+.info .infoContent h1{
+    text-transform: uppercase;
+}
+.info .infoContent .socialLinks{
+    font-size: 2.5rem;
+    /* border: 2px solid green; */
+    /* margin-right: 0.1em; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 2rem 0;
+}
+.header .headerimg{
+    /* border: 2px solid green; */
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    top:10%;
+    right: 10%;
+    /* border-radius: 50px; */
+    z-index: 3;
+}
+.headerimg img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 50px;
+    /* box-shadow: 1px 1px 10px 10px beige; */
+
+}
+
+
+/* ----------------------------- About Styling ------------------------------- */
+.about .aboutHeading{
+    text-align: center;
+    /* border: 2px solid red; */
+}
+.about{
+    padding: 3em 0;
+    height: 90vh;
+}
+.about .aboutBox0{
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* height: 70%; */
+    margin-top: 2em;
+}
+.about .aboutBox0 .aboutBox1{
+    /* border: 2px solid red; */
+    width: 42%;
+    
+}
+.about .aboutBox0 .aboutBox1 img{
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about .aboutBox0 .aboutBox2{
+    /* border: 2px solid green; */
+    width: 55%;
+    padding: 1em;
+}
+.about .aboutBox0 .aboutBox2 p{
+    padding: 1em;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+.about .aboutBox0 .aboutBox2 .aboutBtn{
+    padding: 0.5em;
+    border-radius: 50px;
+    background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1em 2em;
+}
+.aboutBtn:hover{
+    box-shadow: 0 0.2px 10px 5px rgb(39, 27, 27);
+    background-color: red;
+    color: white;
+}
+
+/* -------------------------- Skills Styling ------------------------- */
+
+.skillsBlock{
+    margin-top: 2em;
+    /* border: 4px solid yellow; */
+}
+.skillsBlock .leftSkill{
+    width: 49%;
+    float: left;
+    /* border: 2px solid green; */
+    height: 100%;
+}
+.skillsBlock .rightSkill{
+    width: 49%;
+    float: right;
+    /* border: 2px solid green; */
+    height: 100%;
+}
+.skillsBlock::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.skills{
+    height: 80vh;
+}
+.skills h1{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.skillsBlock .ls .lsimage{
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+.skillsBlock .ls .lsimage img{
+    width: 60px;
+    height: 60px;
+    margin-top: 1em;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.skillsBlock .ls .lstext{
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 80%;
+    float: right;
+    padding: 1em;
+}
+.skillsBlock .ls .lstext .line{
+    border: 4px solid red;
+    border-radius: 50px;
+}
+.skillsBlock .ls .lstext .l1{
+    width: 90%;
+}
+.skillsBlock .ls .lstext .l2{
+    width: 80%;
+}
+.skillsBlock .ls .lstext .l3{
+    width: 20%;
+}
+.skillsBlock .ls .lstext .l4{
+    width: 1%;
+}
+.skillsBlock .ls .lstext .l5{
+    width: 90%;
+}
+.skillsBlock .ls .lstext .l6{
+    width: 60%;
+}
+.skillsBlock .ls .lstext .l7{
+    width: 40%;
+}
+.skillsBlock .ls .lstext .l8{
+    width: 60%;
+}
+.skillsBlock .ls::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/* ---------------------------------- Services Styling --------------------------- */
+.services{
+    /* border: 2px solid red; */
+    height: 80vh;
+
+}
+.services h1{
+    text-align: center;
+    margin-top: 2em;
+}
+.serviceblock{
+    margin-top: 3em;
+    /* height: 300px; */
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.serviceblock .service{
+    height: 100%;
+    width: 32%;
+    /* border: 2px solid red; */
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0px 1px 10px 10px rgb(244, 240, 240);
+    border-radius: 50px;
+}
+.serviceblock .service:hover{
+    background: red;
+    color: white;
+    width: 33%;
+    height: 102%;
+
+}
+.serviceblock .service .srlink{
+    font-size: 6rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.serviceblock .service p{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* ---------------------- Projects Styling --------------------- */
+.project{
+    /* border: 2px solid red; */
+    height: 80vh;
+    padding: 2em;
+}
+.project .input{
+    text-align: center;
+    margin-top: 2em;
+}
+.project .projectBlock{
+    /* border: 2px solid green; */
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+.projectBlock .projects{
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 1px 0px 10px 10px rgb(232, 229, 229);
+    position: relative;
+}
+.project h1{
+    text-align: center;
+    /* margin-top: 2em; */
+    margin-bottom: 2em;
+}
+.projectBlock .projects img{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.projects::after{
+    display: block;
+    content: "";
+    border-radius: 50px;
+    /* background:linear-gradient(rgba(rgb(239, 5, 5)),rgba(255, 255, 255, 0.972)), red; */
+    background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), rgba(255, 0, 0, 0.253);
+
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+}
+.projects:hover::after{
+    opacity: 1;
+}
+.projects .procontent{
+    padding: 1em;
+    text-align: center;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.projects:hover .procontent{
+    opacity: 1;
+    top: 20%;
+    color: white;
+}
+.projects .procontent h2{
+    margin-bottom: 1em;
+}
+.procontent p{
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+/* --------------------------------- Contact Styling ------------------------- */
+.contact{
+    height: 80vh;
+    /* border: 2px solid red; */
+}
+.contact .contactBox{
+    /* border: 2px solid green; */
+    margin-top: 4em;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.contact .contactBox .contactInfo{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 40%;
+    padding: 2em;
+}
+.contactBox .contactInfo .clink{
+    color: red;
+    font-size: 3rem;
+    display: inline-block;
+}
+.contactBox .contactInfo h2{
+    display: inline-block;
+    /* margin-left: 2em; */
+    
+}
+.contact .contactInfo .contactLink{
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: 1em;
+}
+.contactBox .contactInfo .contactlinks{
+    color: black;
+}
+.contact .contactBox .contactform{
+    /* border: 2px solid green; */
+    width: 58%;
+    height: 100%;
+    padding: 2em;
+}
+.contacticonBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+.contacticon{
+    width: 10%;
+    height: 100%;
+    /* border: 2px solid green; */
+    padding: 1em;
+}
+.icontxt{
+    width: 90%;
+    height: 100%;
+    /* border: 2px solid red; */
+    padding: 1em;
+    
+}
+.contactInfo .contactbtn{
+    margin-top: 6em;
+}
+.contactInfo h1{
+    font-size: 4rem;
+}
+.contactBox .contactform .input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2em;
+    padding: 1em;
+    font-size: 2rem;
+}
+.contactBox .contactform textarea{
+    width: 100%;
+    height: 40%;
+    padding: 1em;
+    font-size: 2rem;
+}
+.contactBox .contactform .infosubmit{
+    display: inline-block;
+    width: 120px;
+    margin-top: 1.5em;
+}
+
+
+.contact .contactBox .msg{
+    /* border: 2px solid green; */
+    left: 50%;
+    /* display: inline-block; */
+    width: 100%;
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2em;
+    text-align: center;
+
+}
+/* ------------------------------ Footer Styling ------------------------ */
+.footer{
+    background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
+    height: 8vh;
+    text-align: center;
+    padding-top: 2em;
+}
+.footer p{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    /* margin-top: 2rem; */
+    /* border: 2px solid green; */
+    font-weight: bold;
+}
+/* --------------------------- Hamburger Menu Styling ------------------ */
+.header .hamburger-menu{
+    /* border: 2px solid green; */
+    width: 20%;
+    display: none;
+    padding: 2em;
+    position: relative;
+}
+.hamburger-menu .menu-list li{
+    list-style: none;
+}
+.hamburger-menu .menu-list{
+    margin-top: 4em;
+    transform: translateX(-200%);
+    transition: transform 0.5s ease-in-out;
+    /* border: 2px solid yellow; */
+}
+.hamburger-menu input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+}
+.hamburger-menu input[type="checkbox"]:checked ~ .menu-list{
+    display: block;
+    transform: translateX(0%);
+
+}
+.hamburger-menu .hamburger-lines{
+    /* border: 2px solid yellow; */
+    width: 32px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger-menu .hamburger-lines .line{
+    height: 4px;
+    width: 32px;
+    background-color: black;
+    display: block;
+    border-radius: 50px;
+}
+.hamburger-menu .hamburger-lines .line1{
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+.hamburger-menu .hamburger-lines .line3{
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+
+}
+.hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+    transform: rotate(45deg);
+}
+.hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+    transform: rotate(-45deg);
+}
+.hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+    display: none;
+}
+
+
+
+/* ------------------------------ MEDIA QUERIES ------------------------------------ */
+@media(max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    .footer{
+        height: auto;
+    }
+    .header{
+        height: 80vh;
+    }
+    /* ---------------------- Hamburger media -------------- */
+    .header .hamburger-menu{
+        display: block;
+        position: absolute;
+        z-index: 5;
+    }
+    .header .hamburger-menu{
+        width: 80%;
+        height: 80%;
+        /* background-color: black; */
+        /* color: white; */
+        /* padding: 0 0; */
+    }
+    .header .hamburger-menu input{
+        top: 5%;
+        left: 10%;
+        /* opacity: 2; */
+        z-index: 6;
+    }
+    .header .hamburger-menu .hamburger-lines{
+        top: 5%;
+        left: 10%;
+        z-index: 5;
+    }
+    .header .hamburger-menu .hamburger-lines .line{
+        background-color: white;
+    }
+    .header .hamburger-menu .menu-list li a{
+        font-size: 3rem;
+        color: white;
+    }
+    .header .hamburger-menu .menu-list{
+        margin-top: -1em;
+        padding: 6em 5em;
+        margin-left: -1em;
+        z-index: 3;
+        height: 500px;
+    }
+    .header .hamburger-menu .menu-list li{
+        margin-top: 2em;
+        /* color: white; */
+    }
+    .header .hamburger-menu input[type="checkbox"]:checked ~ .menu-list{
+        background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), rgba(255, 0, 0, 0.253);
+        border-radius: 50px;
+
+    }
+
+    /* --------------------------------------------------- */
+    .header .headerimg{
+        width: 230px;
+        height: 250px;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%,-12%);
+    }
+    /* ------------------------- Contact Media --------------------------------------------- */
+    .contact{
+        /* border: 2px solid red; */
+        height: auto;
+        margin-bottom: 4em;
+    }
+    .contact .contactBox{
+        /* border: 2px solid green; */
+        display: block;
+        height: auto;
+    }
+    .contact .contactBox .contactInfo{
+        /* border: 2px solid yellow; */
+        display: block;
+        width: 100%;
+        margin-bottom: 4em;
+        /* text-align: center; */
+    }
+    .contact .contactBox .contactform{
+        /* border: 2px solid pink; */
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contactInfo .contactbtn{
+        /* border: 2px solid green; */
+        text-align: center;
+    }
+    .contact .contactBox .contactInfo .heading1{
+        text-align: center;
+    }
+
+    /* ----------------------------- Services Media -------------------------- */
+    .services{
+        /* border: 2px solid red; */
+        height: auto;
+    }
+    .services .serviceblock{
+        /* border: 2px solid green; */
+        display: block;
+    }
+    .services .serviceblock .service{
+        /* border: 2px solid yellow; */
+        display: block;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+
+
+
+
+
+
+
+    .header .info{
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-80%);
+        width: 100%;
+        /* border: 2px solid green; */
+        text-align: center;
+    }
+        .header .info .infoContent p{
+        display: none;
+    }
+    .header .info .infoContent .socialLinks{
+        display: none;
+    }
+    
+    .about{
+        height: auto;
+    }
+    .about .aboutBox0{
+        display: block;
+        /* border: 2px solid green; */
+    }
+    .about .aboutBox0 .aboutBox1, 
+    .about .aboutBox0 .aboutBox2{
+        width: 100%;
+        display: block;
+        /* border: 2px solid red; */
+        text-align: center;
+    }
+    /* .about .aboutBox0 .aboutBox2 p{
+        font-size: 10px;
+    } */
+    
+    /* .about .aboutBox0 .aboutBox2 .aboutBtn{
+        font-size: 10px;
+    } */
+
+    /* -------------------------- Skills Media querry -------------- */
+    .skills{
+        /* border: 2psx solid red; */
+        height: auto;
+    }
+    .skills .skillsBlock{
+        height: auto;
+        display: block;
+        width: 100%;
+    }
+    .skills .skillsBlock .leftSkill{
+        display: block;
+        float: none;
+        width: 100%;
+        
+    }
+    .skillsBlock .rightSkill{
+        float: none;
+        width: 100%;
+    }
+    
+
+    /* ------------------ Projects Media ------------------- */
+    .project{
+        /* border: 2px solid green; */
+        margin-top: 2em;
+        height: auto;
+    }
+    .project .projectBlock{
+        /* border: 2px solid red; */
+        height: 100%;
+        display: block;
+    }
+    .projectBlock .projects{
+        /* border: 2px solid yellow; */
+        width: 100%;
+        margin-bottom: 4em;
+        
+    }
+}
+    /* ------------------------------- Contact Media --------------------- */
+    
+
+@media(max-width : 1024px){
+    .navbar{
+        display: none;
+    }
+}
+@media (min-width : 501px) and (max-width : 768px){
+    html{
+        font-size: 50%;
+    }
+    .footer{
+        height: auto;
+    }
+    .header{
+        height: 65vh;
+    }
+    .header .headerimg{
+        width: 280px;
+        height: 300px;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%,-12%);
+    }
+    /* ---------------------- Hamburger media -------------- */
+    /* ---------------------- Hamburger media -------------- */
+    /* ---------------------- Hamburger media -------------- */
+    .header .hamburger-menu{
+        display: block;
+        position: absolute;
+        z-index: 5;
+    }
+    .header .hamburger-menu{
+        width: 80%;
+        height: 80%;
+        /* background-color: black; */
+        /* color: white; */
+        /* padding: 0 0; */
+    }
+    .header .hamburger-menu input{
+        top: 5%;
+        left: 10%;
+        /* opacity: 2; */
+        z-index: 6;
+    }
+    .header .hamburger-menu .hamburger-lines{
+        top: 5%;
+        left: 10%;
+        z-index: 5;
+    }
+    .header .hamburger-menu .hamburger-lines .line{
+        background-color: white;
+    }
+    .header .hamburger-menu .menu-list li a{
+        font-size: 3rem;
+        color: white;
+    }
+    .header .hamburger-menu .menu-list{
+        margin-top: -1em;
+        padding: 6em 5em;
+        margin-left: -1em;
+        z-index: 3;
+        height: 500px;
+    }
+    .header .hamburger-menu .menu-list li{
+        margin-top: 2em;
+        /* color: white; */
+    }
+    .header .hamburger-menu input[type="checkbox"]:checked ~ .menu-list{
+        background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), rgba(255, 0, 0, 0.253);
+        border-radius: 50px;
+
+    }
+    /* ------------------------- Contact Media --------------------------------------------- */
+    .contact{
+        /* border: 2px solid red; */
+        height: auto;
+        margin-bottom: 4em;
+    }
+    .contact .contactBox{
+        /* border: 2px solid green; */
+        display: block;
+        height: auto;
+    }
+    .contact .contactBox .contactInfo{
+        /* border: 2px solid yellow; */
+        display: block;
+        width: 100%;
+        margin-bottom: 4em;
+        /* text-align: center; */
+    }
+    .contact .contactBox .contactform{
+        /* border: 2px solid pink; */
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contactInfo .contactbtn{
+        /* border: 2px solid green; */
+        text-align: center;
+    }
+    .contact .contactBox .contactInfo .heading1{
+        text-align: center;
+    }
+
+    /* ----------------------------- Services Media -------------------------- */
+    .services{
+        /* border: 2px solid red; */
+        height: auto;
+    }
+    .services .serviceblock{
+        /* border: 2px solid green; */
+        display: block;
+    }
+    .services .serviceblock .service{
+        /* border: 2px solid yellow; */
+        display: block;
+        width: 70%;
+        margin: 2em auto;
+    }
+
+
+
+
+
+
+
+
+    .header .info{
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        /* border: 2px solid green; */
+        height: 40%;
+        text-align: center;
+    }
+        .header .info .infoContent p{
+        display: none;
+    }
+    .header .info .infoContent .socialLinks{
+        display: none;
+    }
+    
+    .about{
+        height: auto;
+    }
+    .about .aboutBox0{
+        display: block;
+        /* border: 2px solid green; */
+    }
+    .about .aboutBox0 .aboutBox1, 
+    .about .aboutBox0 .aboutBox2{
+        width: 100%;
+        display: block;
+        /* border: 2px solid red; */
+        text-align: center;
+    }
+    /* .about .aboutBox0 .aboutBox2 p{
+        font-size: 10px;
+    } */
+    
+    /* .about .aboutBox0 .aboutBox2 .aboutBtn{
+        font-size: 10px;
+    } */
+
+    /* -------------------------- Skills Media querry -------------- */
+    .skills{
+        /* border: 2psx solid red; */
+        height: auto;
+    }
+    .skills .skillsBlock{
+        height: auto;
+        display: block;
+        width: 100%;
+    }
+    .skills .skillsBlock .leftSkill{
+        display: block;
+        float: none;
+        width: 100%;
+        
+    }
+    .skillsBlock .rightSkill{
+        float: none;
+        width: 100%;
+    }
+    
+
+    /* ------------------ Projects Media ------------------- */
+    .project{
+        /* border: 2px solid green; */
+        margin-top: 2em;
+        height: auto;
+    }
+    .project .projectBlock{
+        /* border: 2px solid red; */
+        height: 100%;
+        display: block;
+        text-align: center;
+    }
+    .projectBlock .projects{
+        /* border: 2px solid yellow; */
+        width: 70%;
+        margin:2em auto;
+        
+    }
+}
+@media(min-width:769px) and (max-width:1024px){
+    html{
+        font-size: 50%;
+    }
+    .header .info{
+        /* border: 2px solid green; */
+        width: 38%;
+        left: 12%;
+    }
+    /* ---------------------- Hamburger media -------------- */
+    /* ---------------------- Hamburger media -------------- */
+    .header .hamburger-menu{
+        display: block;
+        position: absolute;
+        z-index: 5;
+    }
+    .header .hamburger-menu{
+        width: 80%;
+        height: 80%;
+        /* background-color: black; */
+        /* color: white; */
+        /* padding: 0 0; */
+    }
+    .header .hamburger-menu input{
+        top: 5%;
+        left: 10%;
+        /* opacity: 2; */
+        z-index: 6;
+    }
+    .header .hamburger-menu .hamburger-lines{
+        top: 5%;
+        left: 10%;
+        z-index: 5;
+    }
+    .header .hamburger-menu .hamburger-lines .line{
+        background-color: white;
+    }
+    .header .hamburger-menu .menu-list li a{
+        font-size: 3rem;
+        color: white;
+    }
+    .header .hamburger-menu .menu-list{
+        margin-top: -1em;
+        padding: 6em 5em;
+        margin-left: -1em;
+        z-index: 3;
+        height: 500px;
+    }
+    .header .hamburger-menu .menu-list li{
+        margin-top: 2em;
+        /* color: white; */
+    }
+    .header .hamburger-menu input[type="checkbox"]:checked ~ .menu-list{
+        background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), rgba(255, 0, 0, 0.253);
+        border-radius: 50px;
+
+    }
+    .about{
+        /* border: 2px solid red; */
+        height: auto;
+        margin-bottom: 15em;
+    }
+    .skills{
+        /* border: 2px solid green; */
+        height: auto;
+        margin-bottom: 15em;
+
+    }
+    .services{
+        /* border: 2px solid yellow; */
+        height: auto;
+        margin-bottom: 15em;
+
+    }
+    .project{
+        /* border: 2px solid green; */
+        height: auto;
+        margin-bottom: 15em;
+
+    }
+    .contact{
+        /* border: 2px solid red; */
+        height: auto;
+        margin-bottom: 10em;
+
+    }
+    .contact .contactBox .contactInfo{
+        width: 40%;
+        /* border: 2px solid red; */
+    }
+    .contact .contactBox .contactform{
+        width: 50%;
+        /* border: 2px solid green; */
+    }
+    
+}
